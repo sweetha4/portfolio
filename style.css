@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.name{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:65px;
+    margin-bottom: -20px;
+}
+header {
+    background: linear-gradient(to right, #080808 25%, #eff0ef);
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    padding-bottom: 75px;
+    transition: background 0.3s ease;
+}
+
+header h1 {
+    font-size: 2.5em;
+    transition: font-size 0.3s ease;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+.social-links{
+    padding-top: 10px;
+    font-size: larger;
+}
+.social-links a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+.social-link:hover {
+    color: #080808;
+}
+.cta-btn {
+    display: inline-block;
+    background: linear-gradient(to right, #313030 45%, #007bff);
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+}
+.para{
+    margin-bottom: 20px;
+    font-size: 17px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#about {
+    padding: 40px 0;
+    background: #fff;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    background: linear-gradient(to right, #e6e3e3 35%, #4296f0);
+}
+
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#portfolio {
+    padding: 40px 0;
+    background: #f8f8f8;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards 0.5s;
+    background: linear-gradient(to right, #e6e3e3 35%, #4296f0);
+}
+
+#portfolio h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.project-card {
+    background: #c6e3f0;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+}
+
+.project-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.project-card a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.animated-border {
+    color: #007bff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.animated-border:hover {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+span{
+    color: #dcdee1e7;
+}
+#contact {
+    padding: 40px 0;
+    margin-top: -20px;
+    background: #fff;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards 1s;
+    background: linear-gradient(to right, #e6e3e3 35%, #4296f0);
+}
+
+#contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2em;
+}
+/* Initially hide the contact section */
+#contact.hidden {
+    display: none;
+}
+#contact {
+    background-color: #f1f1f1;
+    display: none;  /* Initially hidden */
+    padding: 50px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Button Style for Navigation */
+.ca-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    border: 3px solid #007BFF;
+    border-radius: 50%;
+    background-color: transparent; 
+    color: #007BFF;
+    font-size: 24px;   
+    cursor: pointer; 
+    margin-bottom: -10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ca-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.ca-btn:focus {
+    outline: none;
+}
+
+.ca-btn i {
+    transition: transform 0.3s ease;
+}
+
+.ca-btn:hover i {
+    transform: translateY(-5px);
+}
+
+/* Scroll animation */
+#contact.show {
+    display: block;
+    /* animation: fadeIn 0.8s ease-in-out;   */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
